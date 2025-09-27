@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Recipe Finder</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<header>
+		<h1>🍽️ Recipe Finder 🍽️</h1>
+	</header>
+
+	<!-- search container -->
+	<div class="search-container">
+		<input type="text" id="ingredient" placeholder="Enter ingredient (e.g., chicken, tomato,...)">
+		<button id="searchBtn">Search Recipes</button>
+	</div>
+
+	<!-- 2 filters; category and cuisine -->
+	<div class="filters">
+		<label>Category:
+			<select id="categoryFilter">
+				<option value="">All</option>
+				<option value="Beef">Beef</option>
+				<option value="Seafood">Seafood</option>
+				<option value="Chicken">Chicken</option>
+				<option value="Pork">Pork</option>
+				<option value="Lamb">Lamb</option>
+				<option value="Vegetarian">Vegetarian</option>
+			</select>
+		</label>
+
+		<label>Cuisine:
+			<select id="areaFilter">
+				<option value="">All</option>
+				<option value="Italian">Italian</option>
+				<option value="Mexican">Mexican</option>
+				<option value="Indian">Indian</option>
+				<option value="American">American</option>
+				<option value="British">British</option>
+				<option value="French">French</option>
+				<option value="Jamaican">Jamaican</option>
+				<option value="Thai">Thai</option>
+				<option value="Japanese">Japanese</option>
+				<option value="Russian">Russian</option>
+			</select>
+		</label>
+
+		<button id="applyFilters">Apply Filters</button>
+	</div>
+
+	<!-- random recipe-->
+	<div class="random-section">
+		<p>OR WANT TO BE SURPRISED BY A COMPLETELY RANDOM RECIPE?</p>
+		<button id="randomBtn">Surprise Me! 🎲</button>
+	</div>
+
+	<!-- recipes display -->
+	<div id="recipes" class="recipes-container"></div>
+
+	<script src="script.js"></script>
+</body>
+</html>

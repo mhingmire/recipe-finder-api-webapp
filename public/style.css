@@ -1,0 +1,209 @@
+/* base styles */
+body {
+	font-family: 'Poppins', sans-serif;
+	background: #FFF5F2; /* lightest pink for background */
+	margin: 0;
+	padding: 0;
+	color: #000; /* black text */
+}
+
+/* header */
+header {
+	text-align: center;
+	padding: 30px 10px;
+	background: #2D4F2B; /* darker green for header */
+	color: #fff; /* white text */
+	box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+	font-size: 2.5em;
+	color: #fff; /* keeping white for contrast */
+	margin: 0;
+}
+
+/* search box */
+.search-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin: 20px 0;
+	flex-wrap: wrap;
+}
+
+.search-container input {
+	padding: 10px 15px;
+	border-radius: 25px;
+	border: 2px solid #568F87; /* teal border */
+	width: 300px;
+}
+
+.search-container button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+	background: #2D4F2B; /* darker green for the search button */
+	color: white;
+	font-weight: bold;
+	transition: transform 0.2s, background 0.2s;
+}
+
+.search-container button:hover {
+	background: #3A6F43; /* slightly lighter green */
+	transform: scale(1.05);
+}
+
+/* filters */
+.filters {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin-bottom: 30px;
+	flex-wrap: wrap;
+}
+
+.filters label {
+	font-weight: bold;
+}
+
+.filters select {
+	padding: 5px 10px;
+	border-radius: 10px;
+	border: 2px solid #568F87; /* teal border */
+}
+
+.filters button {
+	padding: 8px 18px;
+	border: none;
+	border-radius: 25px;
+	background: #568F87; 
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	transition: transform 0.2s, background 0.2s;
+}
+
+.filters button:hover {
+	background: #3A6F43; /* darker green hover */
+	transform: scale(1.05);
+}
+
+/* random recipe section */
+.random-section {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.random-section p {
+	font-size: 2em; /* bigger bold text */
+	font-weight: bold;
+	margin-bottom: 15px;
+	color: #3A6F43; /* dark green text */
+	text-align: center;
+}
+
+.random-section button {
+	padding: 12px 25px;
+	border-radius: 25px;
+	background: #2D4F2B; /* darker green for surprise button */
+	color: white;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+	transition: transform 0.2s, background 0.2s;
+}
+
+.random-section button:hover {
+	background: #3A6F43; /* lighter green hover */
+	transform: scale(1.05);
+}
+
+/* recipes grid */
+.recipes-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 25px;
+	padding: 0 20px 40px 20px;
+}
+
+/* recipe cards */
+.recipe-card {
+	background: #ffe8e8; /* soft pink card */
+	border-radius: 20px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+	overflow: hidden;
+	transition: transform 0.3s, box-shadow 0.3s;
+	position: relative;
+	border: 2px solid #FDAAAA; /* accent pink border */
+}
+
+.recipe-card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+	border-color: #568F87; /* teal on hover */
+}
+
+.recipe-card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-bottom: 3px solid #2D4F2B; /* divider in darker green */
+}
+
+.recipe-card h3 {
+	text-align: center;
+	margin: 15px 10px 5px 10px;
+	color: #2D4F2B; /* darker green for titles */
+}
+
+.recipe-card p {
+	margin: 5px 15px;
+	font-size: 0.9em;
+}
+
+/* ingredients list */
+.recipe-card ul {
+	padding-left: 20px;
+	margin: 5px 15px 15px 15px;
+}
+
+/* recipe link button */
+.recipe-card a {
+	display: block;
+	text-align: center;
+	margin: 10px;
+	padding: 8px 15px;
+	border-radius: 25px;
+	background: #568F87; /* teal button */
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	transition: transform 0.2s, background 0.2s;
+}
+
+.recipe-card a:hover {
+	background: #3A6F43; /* darker green hover */
+	transform: scale(1.05);
+}
+
+/* badges for category & area */
+.badge {
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 12px;
+	font-size: 0.75em;
+	font-weight: bold;
+	margin: 5px;
+	color: white;
+}
+
+.category-badge { background: #2D4F2B; } /* dark green badge */
+.area-badge { background: #Ff5c70; } /* pink badge */
+
+/* responsive */
+@media (max-width: 600px) {
+	.recipes-container { grid-template-columns: 1fr; }
+	.search-container input { width: 90%; }
+}
