@@ -72,5 +72,6 @@ http://localhost:3000
 5. Start Exploring!!
 
 ## **Preview**
-<img width="2880" height="1800" alt="Screenshot (20)" src="https://github.com/user-attachments/assets/c7d72875-9f6b-45df-b4a3-bc6c1cd48c1e" />
 <img width="2880" height="1800" alt="Screenshot (19)" src="https://github.com/user-attachments/assets/332ded95-24a1-473b-a0ba-553cc55f5048" />
+<img width="2880" height="1800" alt="Screenshot (20)" src="https://github.com/user-attachments/assets/c7d72875-9f6b-45df-b4a3-bc6c1cd48c1e" />
+
